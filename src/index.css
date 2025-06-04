@@ -1,0 +1,111 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 20% 98%;
+    --foreground: 25 25% 15%;
+
+    --card: 30 20% 99%;
+    --card-foreground: 25 25% 15%;
+
+    --popover: 30 20% 99%;
+    --popover-foreground: 25 25% 15%;
+
+    --primary: 25 70% 50%;
+    --primary-foreground: 30 20% 98%;
+
+    --secondary: 35 25% 95%;
+    --secondary-foreground: 25 25% 15%;
+
+    --muted: 35 25% 95%;
+    --muted-foreground: 25 15% 45%;
+
+    --accent: 40 60% 85%;
+    --accent-foreground: 25 25% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 25% 90%;
+    --input: 35 25% 90%;
+    --ring: 25 70% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 25 25% 8%;
+    --foreground: 30 20% 95%;
+
+    --card: 25 25% 8%;
+    --card-foreground: 30 20% 95%;
+
+    --popover: 25 25% 8%;
+    --popover-foreground: 30 20% 95%;
+
+    --primary: 25 70% 60%;
+    --primary-foreground: 25 25% 8%;
+
+    --secondary: 25 15% 15%;
+    --secondary-foreground: 30 20% 95%;
+
+    --muted: 25 15% 15%;
+    --muted-foreground: 30 15% 65%;
+
+    --accent: 25 15% 15%;
+    --accent-foreground: 30 20% 95%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 25 15% 20%;
+    --input: 25 15% 20%;
+    --ring: 25 70% 60%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  .batik-pattern {
+    background-image: 
+      radial-gradient(circle at 20px 20px, rgba(239, 127, 26, 0.1) 1px, transparent 1px),
+      radial-gradient(circle at 60px 60px, rgba(228, 30, 2, 0.1) 1px, transparent 1px);
+    background-size: 80px 80px, 120px 120px;
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, #ef7f1a, #e41e02);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
