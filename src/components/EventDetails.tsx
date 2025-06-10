@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const EventDetails = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-batik-50">
+    <section className="py-20 bg-gradient-to-b from-white to-batik-50" id="event-details">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-script text-4xl md:text-5xl text-gradient mb-4">Detail Acara</h2>
